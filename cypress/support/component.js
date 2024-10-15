@@ -14,14 +14,17 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+import "./commands";
+// https://www.npmjs.com/package/cypress-jest-adapter
+// jest语法适配器
+import "cypress-jest-adapter";
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
-import { mount } from 'cypress/vue'
+import { mount } from "cypress/vue";
 
-Cypress.Commands.add('mount', mount)
+Cypress.Commands.add("mount", mount);
 
 // Example use:
 // cy.mount(MyComponent)

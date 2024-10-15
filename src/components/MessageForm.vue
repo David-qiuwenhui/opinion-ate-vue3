@@ -6,10 +6,12 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, defineEmits } from "vue";
 
 const message = ref("");
+const emit = defineEmits(["send"]);
 function send() {
+  emit("send", message.value);
   message.value = "";
 }
 </script>
